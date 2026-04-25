@@ -138,7 +138,7 @@ export async function sha1 (data) {
     return new Uint8Array(hash)
   }
   // Node.js fallback
-  const { createHash } = await import('node:crypto')
+  const { createHash } = await Function('return import("node:crypto")')() // webpack-safe
   const h = createHash('sha1')
   h.update(input)
   return new Uint8Array(h.digest())
