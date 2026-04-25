@@ -14,8 +14,15 @@
     "test": "node --test test/*.test.js"
   },
   "keywords": [
-    "dht", "kademlia", "webrtc", "bep44", "bep46",
-    "mutable", "bittorrent", "p2p", "decentralized"
+    "dht",
+    "kademlia",
+    "webrtc",
+    "bep44",
+    "bep46",
+    "mutable",
+    "bittorrent",
+    "p2p",
+    "decentralized"
   ],
   "author": "John Oyler <john.m.oyler@gmail.com>",
   "license": "MIT",
@@ -25,6 +32,7 @@
   },
   "dependencies": {
     "@noble/ed25519": "^2.0.0",
+    "@thaunknown/simple-peer": "^10.1.0",
     "bencode": "^4.0.0"
   }
 }
