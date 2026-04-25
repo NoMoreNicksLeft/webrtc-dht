@@ -1,3 +1,7 @@
+export { DHTNode } from './node.js'
 export * from './kademlia/index.js'
 export * from './crypto/index.js'
 export { Store } from './storage/index.js'
+export { PeerPool } from './transport/peer-pool.js'
+export { SignalingClient } from './transport/signaling.js'
+export { RPC } from './rpc/index.js'
